@@ -16,7 +16,7 @@ st.set_page_config(page_title="BYB", layout="wide", page_icon='🚀')
 
 BYB = UserAgent()
 header = {'User-Agent': str(BYB.chrome)}
-openai.api_key = "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"
+openai.api_key = "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"
       
 
 def run():
