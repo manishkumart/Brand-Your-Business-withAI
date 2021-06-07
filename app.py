@@ -9,7 +9,6 @@ from fake_useragent import UserAgent
 import streamlit as st
 import pandas as pd
 import streamlit.components.v1 as stc
-import codecs
 import key_config
 pd.options.display.max_colwidth = 10000000000000
 
@@ -18,17 +17,7 @@ st.set_page_config(page_title="BYB", layout="wide", page_icon='🚀')
 BYB = UserAgent()
 header = {'User-Agent': str(BYB.chrome)}
 openai.api_key = key_config.key
-
-print(key_config.key)
-
-def graphics(index_html):
-    st.header("Loading....")
-    index_file = codecs.open(index_html,'r')
-    page = index_file.read()
-    stc.html(page, width=600, height=500, scrolling=False)
-            
-    
-    
+      
 
 def run():
     st.markdown("<h1 style='text-align: center; color: Black;'>Brand your Business with AI 🧠</h1>", unsafe_allow_html=True)
