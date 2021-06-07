@@ -1,5 +1,4 @@
-streamlit==0.82.0
-pandas==1.2.4
-openai==0.6.4
-fake_useragent==0.1.11
-codecs
+streamlit
+pandas
+openai
+fake_useragent
