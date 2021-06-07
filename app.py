@@ -10,13 +10,13 @@ import streamlit as st
 import pandas as pd
 import streamlit.components.v1 as stc
 #import key_config
-pd.options.display.max_colwidth = 10000000000000
+pd.options.display.max_colwidth = 10000
 
 st.set_page_config(page_title="BYB", layout="wide", page_icon='🚀')
 
 BYB = UserAgent()
 header = {'User-Agent': str(BYB.chrome)}
-openai.api_key = "sk-Jw8rIIoneOak8b6zQ6HU4V426SUZ5PmHtljimzAH"
+openai.api_key = "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"
       
 
 def run():
